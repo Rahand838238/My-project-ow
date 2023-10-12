@@ -38,53 +38,27 @@ const userID = ["579644676609671168"]
 
 client.on('message', function(message) {
   if (userID.includes(message.author.id))
- if (message.content === 'kartal') {
- const kartal = client.channels.cache.find(channel => channel.id === "1117105076033560678");
-   kartal.send("p");
+ if (message.content === 'ms') {
+ const kartal = client.channels.cache.find(channel => channel.id === "982299166300569650");
+   kartal.send("owo s all");
  }
 });
 
-  
-client.on('ready', async () => {
+client.on('message', function(message) {
+  if (userID.includes(message.author.id))
+ if (message.content === 'd') {
+ const kartal = client.channels.cache.find(channel => channel.id === "982299166300569650");
+   kartal.send("owo daily");
+ }
+});
 
-console.log(`${client.user.tag} is Ready!`)
-  
-  
-
-const channel = await client.channels.cache.get("1115724946132447242")
-let chats = [
-  `The greatest glory in living lies not in never falling, but in rising every time we fall.`,
-  `The way to get started is to quit talking and begin doing.`,
-  `Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking.`,
-  `If life were predictable it would cease to be life, and be without flavor.`,
-  `Life is what happens when you're busy making other plans.`,
-  `Whoever is happy will make others happy too.`,
-  `When you reach the end of your rope, tie a knot in it and hang on.`,
-  `It is during our darkest moments that we must focus to see the light.`,
-  `Never let the fear of striking out keep you from playing the game.`,
-  `Life is either a daring adventure or nothing at all.`,
-  `The only impossible journey is the one you never begin.`,
-  `The purpose of our lives is to be happy.`,
-  `Life is what happens when you're busy making other plans.`,
-  `I never dreamed about success, I worked for it.`,
-  `Try not to become a man of success. Rather become a man of value.`,
-  `I failed my way to success`,
-  `You miss 100% of the shots you don't take.`,
-  `Dreaming, after all, is a form of planning.`,
-  `I would rather die of passion than of boredom.`,
-  `If you're offered a seat on a rocket ship, don't ask what seat! Just get on`,
-  `You may be disappointed if you fail, but you are doomed if you don't try`
-]  
-
-
-setInterval(() => {
-const msg = chats[Math.floor(Math.random()*chats.length)]
-setTimeout(() => {
-channel.send(msg)
-}, 300)
-}, 13000)
-
-})
+client.on('message', function(message) {
+  if (userID.includes(message.author.id))
+ if (message.content === 'sm') {
+ const kartal = client.channels.cache.find(channel => channel.id === "982299166300569650");
+   kartal.send("owo cf all");
+ }
+});
 
       client.login(line).catch(() => {
   console.log(`token is invalid`)
